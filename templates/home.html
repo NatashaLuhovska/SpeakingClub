@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speaking club</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__flex">
+            <h1 class="logo">Yana</h1>
+            <strong><nav class="nav">
+                <ul class="menu">
+                    <li class="nav__li"><a class="nav__link" href="{{ url_for('home')}}">Головна</a></li>
+                    <li class="nav__li"><a class="nav__link" href="{{ url_for('about')}}">Реєстрація</a></li>
+                </ul>
+            </nav></strong>
+        </div>
+    </header>
+    <section class="backgr">
+        <div class="container about">
+            <div>
+                <h1  class="about__title"> 
+                    Speaking club
+                    with Yana
+                </h1>
+                <p class="about__text">  
+                    Якщо вже набридло  з англійської знати
+                    тільки Present Simple, то бігом записуйся. <br>
+                    Рівень англійського А2+
+                </p>
+            </div>
+            <div>
+                <img class="img__title" src="../static/img/Girl.png" alt="">
+            </div>
+        </div>
+        <p class="container  about__textsecond">
+            Кожного тижня різні теми для спілкування, ігри, відео, музика, нові враження
+        </p>
+    </section>
+    <section class="backgr">
+        <h3 class="container schedule__club">Розклад розмовного клубу</h3>
+        <div class="container schedule__flex">
+                <div class="schedule__item">
+                    <img class="img__schedule" src="../static/img/Movies.png" alt="">
+                    <h5 class="date_time">26.08.2022 o 19.00</h5>
+                    <button class="button__schedule">Реєстрація</button>
+                </div>
+                <div class="schedule__item">
+                    <img class="img__schedule" src="../static/img/music.png" alt="">
+                    <h5 class="date_time">27.08.2022 o 19.00</h5>
+                    <button class="button__schedule">Реєстрація</button>
+                </div>
+                <div class="schedule__item">
+                    <img class="img__schedule" src="../static/img/travel.png" alt="">
+                    <h5 class="date_time">28.08.2022 o 19.00</h5>
+                    <button class="button__schedule">Реєстрація</button>
+                </div>
+        </div>
+        <p class="container adress"> м. Черкаси, вул. Дашковича, 19 </p>
+    </section>
+    <footer class="footer">
+        <div class="container footer__flex">
+            <ul class="social">
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/Insta.png" alt=""></a>
+                </li>
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/facebook.png" alt=""></a>
+                </li>
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/teleg.png" alt=""></a>
+                </li>
+            </ul>
+            <p class="text"> м. Черкаси, вул. Дашковича, 19 </p>
+        </div>
+    </footer>
+</body>
+</html>

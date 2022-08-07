@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+    <link rel="stylesheet" href="../static/css/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__flex">
+            <h1 class="logo">Yana</h1>
+            <strong><nav class="nav">
+                <ul class="menu">
+                    <li class="nav__li"><a class="nav__link" href="{{ url_for('home')}}">Головна</a></li>
+                    <li class="nav__li"><a class="nav__link" href="{{ url_for('about')}}">Реєстрація</a></li>
+                </ul>
+            </nav></strong>
+        </div>
+    </header>
+    <section class="backgr">
+        <div class="container  back__registr">
+            <h1 class="registr__title">Реєстрація</h1>
+            
+            <form action="success.html" method="POST" class="registr_form">
+                <input title="Your name will be safe with us" placeholder="Enter your name" type="text" name="user_name" required class="input"> <br>
+                <input title="Your email will be safe with us" placeholder="Enter your email address" type="email" name="email_name" required class="input"> <br>
+                <input title="Your phone number will be safe with us" placeholder="Enter your phone number " type="tel" name="phone_number" required class="input"> <br>
+        
+                <input list="user_topics" id="user_topic" name="user_topic" placeholder="Choose a flavor:" class="input"/>
+                <datalist id="user_topics">
+                    <option value="Movies">
+                    <option value="Food">
+                    <option value="Travel">
+                    <option value="IT">
+                    <option value="Relationships">
+                    <option value="Job">
+                </datalist>
+        
+                <fieldset>
+                    <legend class="legend">Your English level:</legend>
+                
+                    <div>
+                    <input type="radio" id="level_A1" name="level_en" value="A1"
+                            checked>
+                    <label for="level_A1">Elementary - A1</label>
+                    </div>
+                
+                    <div>
+                    <input type="radio" id="level_A2" name="level_en" value="A2">
+                    <label for="level_A2">Pre intermediate - A2</label>
+                    </div>
+                
+                    <div>
+                    <input type="radio" id="level_B1" name="level_en" value="B1">
+                    <label for="level_B1">Intermediate - B1</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" id="level_B2" name="level_en" value="B2">
+                        <label for="level_B2">Upper intermediate - B2</label>
+                    </div>
+        
+                    <div>
+                        <input type="radio" id="level_C1" name="level_en" value="C1">
+                        <label for="level_C1">Advanced - C1</label>
+                    </div>
+                </fieldset>
+        
+                <fieldset>
+                    <legend class="legend">Day:</legend>
+                    <div>
+                        <input type="radio" id="day_Saturday" name="weekday" value="Saturday"
+                            checked>
+                        <label for="day_Saturday">Saturday</label>
+                    </div>
+                
+                    <div>
+                        <input type="radio" id="day_Sunday" name="weekday" value="Sunday">
+                        <label for="day_Sunday">Sunday</label>
+                    </div>
+                </fieldset>
+                
+                <button type="submit" class="button__submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container footer__flex">
+            <ul class="social">
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/Insta.png" alt=""></a>
+                </li>
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/facebook.png" alt=""></a>
+                </li>
+                <li class="nav__li">
+                    <a href="#"><img src="../static/img/teleg.png" alt=""></a>
+                </li>
+            </ul>
+            <p class="text"> м. Черкаси, вул. Дашковича, 19 </p>
+        </div>
+    </footer>
+</body>
+</html>
