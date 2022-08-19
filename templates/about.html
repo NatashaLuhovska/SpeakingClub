@@ -23,7 +23,7 @@
         <div class="container  back__registr">
             <h1 class="registr__title">Реєстрація</h1>
             
-            <form action="success.html" method="POST" class="registr_form">
+            <form action="{{ url_for('success')}}" method="POST" class="registr_form">
                 <input title="Your name will be safe with us" placeholder="Enter your name" type="text" name="user_name" required class="input"> <br>
                 <input title="Your email will be safe with us" placeholder="Enter your email address" type="email" name="email_name" required class="input"> <br>
                 <input title="Your phone number will be safe with us" placeholder="Enter your phone number " type="tel" name="phone_number" required class="input"> <br>
@@ -41,15 +41,10 @@
                 <fieldset>
                     <legend class="legend">Your English level:</legend>
                 
-                    <div>
-                    <input type="radio" id="level_A1" name="level_en" value="A1"
-                            checked>
-                    <label for="level_A1">Elementary - A1</label>
-                    </div>
                 
                     <div>
                     <input type="radio" id="level_A2" name="level_en" value="A2">
-                    <label for="level_A2">Pre intermediate - A2</label>
+                    <label for="level_A2">Pre-Intermediate - A2</label>
                     </div>
                 
                     <div>
@@ -59,7 +54,7 @@
         
                     <div>
                         <input type="radio" id="level_B2" name="level_en" value="B2">
-                        <label for="level_B2">Upper intermediate - B2</label>
+                        <label for="level_B2">Upper-Intermediate - B2</label>
                     </div>
         
                     <div>

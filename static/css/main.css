@@ -55,8 +55,13 @@ body{
 
 .backgr{
     background: rgba(39, 39, 33, 0.7);   
+    
 }
 
+/*.backgr_reg{
+    background: rgb(106,105,113);
+    background: linear-gradient(90deg, rgba(106,105,113,1) 0%, rgba(130,134,62,1) 47%, rgba(255,243,0,1) 100%);   
+}*/
 
 .about__title{
     

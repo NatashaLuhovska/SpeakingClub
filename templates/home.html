@@ -7,7 +7,7 @@
     <title>Speaking club</title>
     <link rel="stylesheet" href="../static/css/main.css">
 </head>
-<body>
+<body class="backgr">
     <header class="header">
         <div class="container header__flex">
             <h1 class="logo">Yana</h1>
@@ -19,7 +19,7 @@
             </nav></strong>
         </div>
     </header>
-    <section class="backgr">
+    <section>
         <div class="container about">
             <div>
                 <h1  class="about__title"> 
@@ -40,23 +40,23 @@
             Кожного тижня різні теми для спілкування, ігри, відео, музика, нові враження
         </p>
     </section>
-    <section class="backgr">
+    <section>
         <h3 class="container schedule__club">Розклад розмовного клубу</h3>
         <div class="container schedule__flex">
                 <div class="schedule__item">
                     <img class="img__schedule" src="../static/img/Movies.png" alt="">
                     <h5 class="date_time">26.08.2022 o 19.00</h5>
-                    <button class="button__schedule">Реєстрація</button>
+                    <button class="button__schedule"><a class="nav__link" href="{{ url_for('about')}}">Реєстрація</a></button>
                 </div>
                 <div class="schedule__item">
                     <img class="img__schedule" src="../static/img/music.png" alt="">
                     <h5 class="date_time">27.08.2022 o 19.00</h5>
-                    <button class="button__schedule">Реєстрація</button>
+                    <button class="button__schedule"><a class="nav__link" href="{{ url_for('about')}}">Реєстрація</a></button>
                 </div>
                 <div class="schedule__item">
                     <img class="img__schedule" src="../static/img/travel.png" alt="">
                     <h5 class="date_time">28.08.2022 o 19.00</h5>
-                    <button class="button__schedule">Реєстрація</button>
+                    <button class="button__schedule"><a class="nav__link" href="{{ url_for('about')}}">Реєстрація</a></button>
                 </div>
         </div>
         <p class="container adress"> м. Черкаси, вул. Дашковича, 19 </p>
